@@ -324,6 +324,7 @@ header .items .btn{
     transform: translateY(-1rem);
 }
 .review .row .box img{
+    object-fit: fill;
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
