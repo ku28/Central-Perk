@@ -14,7 +14,7 @@
 
     <!-- headr  -->
     <header>
-        <a href="links/home.html" class="logo">
+        <a href="home.html" class="logo">
             <img src="image/about.png" alt="image">
         </a>
 
@@ -32,6 +32,15 @@
             <div class="fas fa-bars" id="bars-btn"></div>
         </div>
 
+        <div class="cart-popup" id="cart-popup">
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total"></span>
+            </div>
+            <a href="bill.html" class="btn checkout-btn">Checkout</a>
+        </div>
+
         <div class="search-form">
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
@@ -39,51 +48,6 @@
 
         <div class="items">
 
-            <div class="item">
-                <span class="fas fa-times"></span>
-                <img src="image/menu-1.png" alt="image">
-                <div class="content">
-                    <h3>Hot Coffee</h3>
-                    <div class="price">
-                        Rs.80
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <span class="fas fa-times"></span>
-                <img src="image/menu-2.png" alt="image">
-                <div class="content">
-                    <h3>Sandwich</h3>
-                    <div class="price">
-                        Rs.120
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <span class="fas fa-times"></span>
-                <img src="image/menu-3.png" alt="image">
-                <div class="content">
-                    <h3>French Fries</h3>
-                    <div class="price">
-                        Rs.80
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <span class="fas fa-times"></span>
-                <img src="image/menu-4.png" alt="image">
-                <div class="content">
-                    <h3>Cold Drink</h3>
-                    <div class="price">
-                        Rs.30
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
     </header>
     <!-- /headr  -->
     <!-- home  -->
@@ -99,7 +63,7 @@
                         We pride ourselves on serving delicious coffee <br>
                         and a variety of mouth-watering cuisine.  <br>
                     </p>
-                    <a href="#" class="btn">order now</a>
+                    <a href="links/menu.html" class="btn">order now</a>
                 </div>
             </div>
         </div>

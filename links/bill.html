@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/1828b1f33f.js" crossorigin="anonymous"></script>
+
+  <title>Bill - Central Perk</title>
+  <link rel="icon" href="image/about.ico">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <a href="home.html" class="logo">
+      <img src="image/about.png" alt="image">
+    </a>
+
+    <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="menu.html">menu</a>
+      <a href="review.html">review</a>
+      <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-bars" id="bars-btn"></div>
+    </div>
+
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+  </header>
+  <!-- /header -->
+
+  <!-- bill -->
+  <section class="bill">
+    <h1 class="heading">Bill</h1>
+
+    <div class="row">
+      <div class="bill-items" id="bill-items"></div>
+      <div class="bill-total">
+        <h3>Total Amount:</h3>
+        <span id="total-amount"></span>
+      </div>
+      <div class="bill-button">
+        <a href="#" class="btn generate-bill">Generate Bill</a>
+      </div>
+    </div>
+  </section>
+  <!-- /bill -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="share">
+      <a href="#" class="fa-brands fa-facebook"></a>
+      <a href="#" class="fa-brands fa-twitter"></a>
+      <a href="#" class="fa-brands fa-instagram"></a>
+      <a href="#" class="fa-brands fa-linkedin"></a>
+      <a href="#" class="fa-brands fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="menu.html">menu</a>
+      <a href="review.html">review</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const totalAmount = localStorage.getItem('totalAmount');
+      document.getElementById('total-amount').textContent = totalAmount || '0';
+    });
+  </script>
+</body>
+
+</html>
